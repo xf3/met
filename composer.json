@@ -1,0 +1,8 @@
+{
+	"name": "xf3/met",
+	"description": "MET class provides way to overcome Php's max_execution_time directive by splitting script execution into parts",
+	"keywords": ["php", "max_execution_time"],
+	"homepage": "https://github.com/xf3/MET",
+	"type": "library",
+	"license": "BSD-3-Clause"
+}
