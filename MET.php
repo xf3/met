@@ -159,9 +159,11 @@ class MET {
 	{
 		$args = func_get_args();
 
-		if (func_num_args() === 3) {
-			$callback = $args[2];
-			unset($args[2]);
+		$argsN = func_num_args();
+
+		if ($argsN && is_callable($args[$argsN-1])) {
+			$callback = $args[$argsN-1];
+			unset($args[$argsN-1]);
 		} else {
 			$callback = false;
 		}
