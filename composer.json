@@ -4,5 +4,10 @@
 	"keywords": ["php", "max_execution_time"],
 	"homepage": "https://github.com/xf3/MET",
 	"type": "library",
-	"license": "BSD-3-Clause"
+	"license": "BSD-3-Clause",
+	"autoload": {
+        "psr-4": {
+            "xf3\\": ""
+        }
+    }
 }

@@ -2,9 +2,17 @@
 
 MET library allows to overcome Php's `max_execution_time` limit by splitting code execution into parts.
 
+##Description
+
+In case you cannot modify Php's `max_execution_time` directive and need to execute long-running script, you can use MET to split it and rerun itself each time limit is close with saving done changes.
+
+Before run, class checks the ability to save data:
+	* Start session for web request
+	* Execute `php self_script.php` for CLI mode
+
 ###Usage examples
 
-Say you have some script, which imports big database data into:
+Say you have some script, which imports big database data into file:
 
 ```php
 <?php

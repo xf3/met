@@ -1,5 +1,7 @@
 <?php
 
+namespace xf3;
+
 /**
  * Class MET
  */
